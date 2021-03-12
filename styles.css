@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+
+/*SIMPLE NAVIGATION*/
+
+nav {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+}
+
+.cart {
+  content: url("shoppingbag.png");
+  width: 30px;
+  height: 27px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(85, 79, 79) !important;
+}
+a:hover {
+  color: #000 !important;
+}
+
+/*SHOP PAGE*/
+
+#page-body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header > h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+/*PRODUCTS*/
+
+.products-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-src {
+  margin-top: 1.5rem;
+}
+
+.item-name {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 0.6rem;
+  color: #dcfaeb;
+  background-color: rgb(60, 97, 71);
+}
+
+.item-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: rgb(60, 97, 71);
+  background-color: #dcfaeb;
+}
+
+.buttonAdd {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  margin-left: 0.4rem;
+  border-radius: 2rem;
+  transition: 0.5s;
+}
+
+.buttonAdd:hover {
+  background-color: rgb(142, 230, 149);
+  font-weight: bold;
+}
+
+/* SHOPPING BAG OUTLOOK*/
+
+h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 29px;
+  text-align: center;
+  border-bottom: 3.5px solid #18643e;
+}
+
+.titles {
+  border-bottom: 2px solid #18643e;
+}
+
+.shoppingbag-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shoppingbag-row,
+.shoppingbag-items,
+.total-amount,
+.purchase {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.bag-item,
+.bag-price-name,
+.bag-quantity-name {
+  font-size: 23px;
+}
+
+.shoppingbag-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.bag-price {
+  margin-right: 4rem;
+  font-size: 25px;
+}
+
+.bag-quantity-input {
+  height: 30px;
+  width: 40px;
+  border-radius: 3.5px;
+  border: 1px solid #56f2a4;
+  color: #333;
+  text-align: center;
+  font-size: 15px;
+}
+
+.btnRemove {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 21px;
+  background-color: rgb(255, 183, 183);
+  margin-left: 0.4rem;
+  border-radius: 2rem;
+}
+
+/* TOTAL AMOUNT SECTION */
+
+.purchasebtn {
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.purchase {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 25px;
+  background-color: #fff;
+  margin-left: 0.4rem;
+  border-radius: 1.5rem;
+}
+
+.purchase:hover {
+  background-color: rgb(142, 230, 149);
+  font-weight: bold;
+}
+
+.total-amount {
+  text-align: center;
+  font-size: 27px;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .image-src {
+    height: 150px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .price {
+    background-color: transparent;
+    color: rgb(60, 97, 71);
+    text-shadow: #dcfaeb 2px 2px 1px;
+  }
+}

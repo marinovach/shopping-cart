@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" async></script>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>HOME</li>
+        <li>PLANTS</li>
+        <li>BLOG</li>
+        <li><a href="index.html">SHOP</a></li>
+        <li class="cart"></li>
+      </ul>
+    </nav>
+    <section id="page-body">
+      <div class="header">
+        <h2>Browse Our Plants</h2>
+      </div>
+      <div class="products-section">
+        <div class="product-item">
+          <img
+            class="image-src"
+            src="medium-plant-snake-white-pot_720x@2x.webp"
+            alt="snake plant"
+            height="250"
+            width="210"
+          />
+          <span class="item-name">Snake Plant </span><br />
+          <div class="item-info">
+            <span class="price">£10</span>
+            <button class="buttonAdd">Add to Bag</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <img
+            class="image-src"
+            src="flowerbx-plants-product-fiddle-leaf-fig-tall-1000px-2.jpg"
+            alt="fiddle-leaf fig plant"
+            height="250"
+            width="210"
+          />
+          <span class="item-name">Fiddle-Leaf Fig </span><br />
+          <div class="item-info">
+            <span class="price">£15</span>
+            <button class="buttonAdd">Add to Bag</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <img
+            class="image-src"
+            src="large-plant-peace-lily-seafoam-pot_1000x.jpg"
+            alt="peace lily"
+            height="250"
+            width="210"
+          />
+          <span class="item-name lily">Peace Lily </span><br />
+          <div class="item-info">
+            <span class="price">£10</span>
+            <button class="buttonAdd">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+      <div class="products-section">
+        <div class="product-item">
+          <img
+            class="image-src"
+            src="420107_euphorbia_cactus_boeket_70_keramiek_pot_18x18_2.jpg"
+            alt="euphorbia cactus"
+            height="250"
+            width="210"
+          />
+          <span class="item-name">Euphorbia Cactus </span><br />
+          <div class="item-info">
+            <span class="price">£13</span>
+            <button class="buttonAdd">Add to Bag</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <img
+            class="image-src"
+            src="TLB_HOU001_04-2.jpg"
+            alt="calathea"
+            height="250"
+            width="210"
+          />
+          <span class="item-name">Calathea </span><br />
+          <div class="item-info">
+            <span class="price">£10</span>
+            <button class="buttonAdd">Add to Bag</button>
+          </div>
+        </div>
+        <div class="product-item">
+          <img
+            class="image-src"
+            src="plant.jpg"
+            alt="castanospermum"
+            height="250"
+            width="210"
+          />
+          <span class="item-name castano">Castano </span><br />
+          <div class="item-info">
+            <span class="price">£12</span>
+            <button class="buttonAdd">Add to Bag</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bag-container">
+      <h2><span>Shopping Bag</span></h2>
+      <div class="shoppingbag-row titles">
+        <span class="bag-item">ITEM</span>
+        <span class="bag-price-name">PRICE</span>
+        <span class="bag-quantity-name">QUANTITY</span>
+      </div>
+      <div class="shoppingbag-items"></div>
+      <br />
+      <div class="total-amount">
+        <strong class="total">Total</strong>
+        <span class="total-price">£0</span>
+      </div>
+      <div class="purchasebtn">
+        <button class="purchase" type="button">PURCHASE</button>
+      </div>
+    </section>
+  </body>
+</html>
